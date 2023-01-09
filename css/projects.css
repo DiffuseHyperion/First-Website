@@ -1,0 +1,115 @@
+.wrapper .container {
+    flex: 1 1 auto;
+    margin: 10px;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.wrapper .container .carousel {
+    background-color: rgb(40, 40, 40);
+    height: 50%;
+    width: 80%;
+
+    margin: 2.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.wrapper .header {
+    flex: 0 1 auto;
+    margin: 10px;
+}
+
+.wrapper .main {
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(50, 50, 50);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+}
+
+.slide {
+    display: none;
+    animation: fade 2s;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+.scrollheader {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.scrollheader .textcontainer {
+    padding: 30px;
+}
+
+.scrollmenu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    height: 100%;
+    margin: 0px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+}
+
+.section:not(#last-item) {
+    border-right: 1px solid #bbb;
+}

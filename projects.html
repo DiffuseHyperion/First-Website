@@ -17,49 +17,156 @@
   <link rel="apple-touch-icon" href="assets/icon.png">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
+
+  <script src="js/projects.js"></script>
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="websites.html">Websites</a></li>
-            <li><a href="https://github.com/DiffuseHyperion">Github</a></li>
-        </ul>
-    </div>
-    <div class="body">
-        <h1>a list of all my past projects</h1>
-        <p>more will be added as time passes</p>
-        <div class="section">
-            <div class="header">
-                <h3>Minecraft - Spigot</h3>
-                <p>Spigot is a server-side software which provides an extensive API to modify the game.</p>
-            </div>
+    <div class="wrapper">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="https://github.com/DiffuseHyperion">Github</a></li>
+            </ul>
         </div>
-        <div class="section">
+        <div class="body container">
             <div class="header">
-                <h3>Minecraft - Fabric (Client)</h3>
-                <p>Fabric is a modding toolchain allowing developers to modify their client.</p>
-                <p></p>
+                <h1>a list of all my past projects</h1>
+                <p>more will be added as time passes</p>
             </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h3>Android</h3>
-                <p>Android is an open source phone software which allows people to create their own apps.</p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h3>Python</h3>
-                <p>Python is a popular general purpose programming language which emphasizes code readibility. </p>
+            <div class="main">
+                <button class="button" onclick="plusSlides(-1)"><</button>
+                <div class="carousel">
+                    <div class="slide" style="display: flex;">
+                        <div class="scrollheader">
+                            <div class="textcontainer">
+                                <h2>Minecraft - Spigot</h3>
+                                    <p>Spigot is a server-side software which provides an extensive API to modify the game.</p>
+                            </div>
+                        </div>
+                        <div class="scrollmenu">
+                            <div class="section">
+                                <h3>LavaRising</h3>
+                                <h4>My first plugin and introduction into Java.</h4>
+                                <p>A minigame-based plugin where you</p>
+                                <p>try to survive the longest out of everyone.</p>
+                                <br>
+                                <p>This was developed out of frustration that</p>
+                                <p>alot of the LavaRising plugins are either</p>
+                                <p>really trash or paid for some reason</p>
+                            </div>
+                            <div class="section">
+                                <h3>GameMaster</h3>
+                                <p>An API developed shortly after LavaRising.</p>
+                                <p>It contained common methods for my plugins.</p>
+                                <br>
+                                <p>This was developed alongside DeathSwap since</p>
+                                <p>I realised alot of methods in LavaRising would</p>
+                                <p>come in handy in DeathSwap too.</p>
+                            </div>
+                            <div class="section">
+                                <h3>DeathSwap</h3>
+                                <p>Developed a while after GameMaster.</p>
+                                <p>Another minigame-based plugin where you</p>
+                                <p>try to live longer than the enemy team.</p>
+                                <br>
+                                <p>This was developed mostly as a one off project</p>
+                            </div>
+                            <div class="section">
+                                <h3>FactionWarfare</h3>
+                                <p>WIP</p>
+                                <p>A spinoff to the popular factions gamemode.</p>
+                            </div>
+                            <div class="section">
+                                <h3>Thermodynamics</h3>
+                                <p>WIP</p>
+                                <p>global warming in minecraft :thumbsup:</p>
+                            </div>
+                            <div class="section" id="last-item">
+                                <h3>More projects soon...</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="scrollheader">
+                            <div class="textcontainer">
+                                <h2>Minecraft - Fabric (Client)</h3>
+                                    <p>Fabric is a minecraft modding toolchain allowing developers to modify the game.</p>
+                            </div>
+                        </div>
+                        <div class="scrollmenu">
+                            <div class="section">
+                                <h3>TooManyButtons</h3>
+                                <h4>My first fabric mod.</h4>
+                                <p>A mod allowing you to toggle most</p>
+                                <p>GUI buttons within the game.</p>
+                                <br>
+                                <p>This was developed cuz why not you know</p>
+                            </div>
+                            <div class="section">
+                                <h3>UntitledRidgebreakerMod</h3>
+                                <p>An unused mod allowing multiple users.</p>
+                                <p>to find a hidden recipe.</p>
+                                <br>
+                                <p>This was originally developed for a server</p>
+                                <p>I was going to play on soon, but it was deemed</p>
+                                <p>not allowed for moderators because they "didnt</p>
+                                <p>want to check it if it was unfair"</p>
+                            </div>
+                            <div class="section" id="last-item">
+                                <h3>More projects soon...</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="scrollheader">
+                            <div class="textcontainer">
+                                <h2>Others</h3>
+                                    <p>Other projects i've worked on.</p>
+                            </div>
+                        </div>
+                        <div class="scrollmenu">
+                            <div class="section">
+                                <h3>TKKYIA-2023-BottleTracker</h3>
+                                <h4>My first Android app.</h4>
+                                <p>WIP, maybe</p>
+                            </div>
+                            <div class="section">
+                                <h3>SimpleSnake</h3>
+                                <p>A simple snake game for AndroidTV.</p>
+                                <br>
+                                <p>Developed because my parents bought</p>
+                                <p>an AndroidTV for some reason</p>
+                            </div>
+                            <div class="section">
+                                <h3>UntitledRidgebreakerClient</h3>
+                                <h4>My first HTML website.</h4>
+                                <p>A website implementation of UntitledRidgebreakerMod.</p>
+                                <br>
+                                <p>Developed as a "loophole" around the admin's rules</p>
+                                <p>can't be a blacklisted mod if it isn't a mod :shrug:</p>
+                            </div>
+                            <div class="section">
+                                <h3>This website!</h3>
+                                <p>literally the website you are viewing now</p>
+                                <br>
+                                <p>Developed because my friends did so lol</p>
+                            </div>
+                            <div class="section" id="last-item">
+                                <h3>More projects soon...</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button" onclick="plusSlides(1)">></button>
             </div>
         </div>
     </div>
 </body>
-
 </html>
